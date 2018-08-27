@@ -57,7 +57,7 @@ export default function createSourceFactory(spec) {
 				return true
 			}
 
-			return spec.canDrag(this.props, this.monitor)
+			return spec.canDrag(this.props, this.monitor, this.component)
 		}
 
 		isDragging(globalMonitor, sourceId) {
